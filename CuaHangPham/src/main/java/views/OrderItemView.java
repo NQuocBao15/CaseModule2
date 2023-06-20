@@ -62,7 +62,7 @@ public class OrderItemView {
 
     private boolean isRetryAddOrderItem(long orderId) {
         do {
-            System.out.println("Chọn 'y' tiếp tục thêm sản phẩm \t|\t 'q' để in hóa đơn \t|\t 'e' để thoát.");
+            System.out.println("Chọn 'y' tiếp tục thêm sản phẩm \t|\t 'q' để in hóa đơn \t|\t 'e' để quay lại.");
             String choice = scanner.nextLine();
             switch (choice) {
                 case "y":
@@ -72,9 +72,7 @@ public class OrderItemView {
                     printProductInvoice(orderId);
                     return false;
                 case "e":
-                    System.out.println("Exit the program...");
-                    System.exit(0);
-                    break;
+                    return false;
                 default:
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     break;
@@ -103,7 +101,7 @@ public class OrderItemView {
         for (int i = 0; i < orderItems.size(); i++) {
             OrderItem orderItem = orderItems.get(i);
             System.out.printf("║ %-7s | %-30s | %-18s | %-10s | %-18s ║\n",
-                    i + 1,
+                    i,
                     productService.findProductById(orderItem.getProductId()).getName(),
                     CheckUtils.doubleToVND(orderItem.getPrice()),
                     orderItem.getQuantity(),

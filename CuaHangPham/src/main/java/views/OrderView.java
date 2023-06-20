@@ -9,7 +9,6 @@ import utils.ValidateUtils;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -39,6 +38,7 @@ public class OrderView {
     }
 
     public void addOrder() {
+        System.out.println("* Mỗi sản phẩm nên mua 2 lần liên tiếp và sản phẩm cuối cùng mua 1 lần để có một trải nghiệm tốt nhất *");
         long orderId = 0;
         do {
             try {

@@ -100,7 +100,8 @@ public class UserView {
     }
 
     private String inputPassWord() {
-        System.out.println("Nhập mật khẩu (Mật khẩu >= 8 kí tự");
+        System.out.println("Mật khẩu >= 8 kí tự trong đó chứa  " +
+                "ít nhất 1 ký tự viết hoa, viết thường, chữ số và kí tự đặt biệt");
         String password;
         while (!ValidateUtils.isPassWordValid(password = scanner.nextLine())) {
             System.out.println("Mật khẩu >= 8 kí tự trong đó chứa  " +
@@ -110,7 +111,7 @@ public class UserView {
     }
 
     private String inputNameAccount() {
-        System.out.println("Nhập tài khoản (VD: Vidu123)");
+        System.out.println("Nhập tài khoản (VD: vidu123)");
         String nameAccount;
         do {
             if (!ValidateUtils.isUserNameValid(nameAccount = CheckUtils.stringEmpty())) {
