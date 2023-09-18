@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService implements IProductService {
-    public final String pathProduct = "./data/products.csv";
+    public final String pathProduct = "D:\\CodeGym\\CaseModule2\\CuaHangPham\\data\\products.csv";
     private static ProductService instance;
     public static ProductService getInstance() {
         if (instance == null)

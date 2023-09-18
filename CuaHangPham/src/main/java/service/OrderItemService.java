@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderItemService implements IOrderItemService{
-    public final String pathOrderItems = "./data/orderItem.csv";
+    public final String pathOrderItems = "D:\\CodeGym\\CaseModule2\\CuaHangPham\\data\\orderItem.csv";
     private static OrderItemService instance;
     public static OrderItemService getInstance() {
         if (instance == null)

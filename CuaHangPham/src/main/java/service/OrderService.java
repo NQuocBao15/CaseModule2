@@ -6,7 +6,7 @@ import utils.FileUtils;
 import java.util.List;
 
 public class OrderService  implements IOrderService {
-    private final String pathOrder = "./data/order.csv";
+    private final String pathOrder = "D:\\CodeGym\\CaseModule2\\CuaHangPham\\data\\order.csv";
     private static OrderService instance;
     public static OrderService getInstance() {
         if (instance == null)

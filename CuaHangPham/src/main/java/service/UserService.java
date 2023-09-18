@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService implements IUserService {
-    public final String pathUser = "./data/users.csv";
+    public final String pathUser = "D:\\CodeGym\\CaseModule2\\CuaHangPham\\data\\users.csv";
     private static UserService instance;
 
     public static UserService getInstance() {
