@@ -9,8 +9,5 @@
         <module name="CuaHangPham" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CuaHangPham" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
